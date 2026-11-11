@@ -4,21 +4,20 @@ Applied AI engineer in Singapore. I build and ship agentic and multimodal AI pro
 
 ## What I'm building now
 
-- **Phone-based home agent** (private prototype, no public link). Turns a spare Android phone or tablet into an always-on host for six AI coding-agent harnesses (Codex, Claude Code, Antigravity, Pi, Oh My Pi, Mistral Vibe), running on subscriptions people already pay for and reachable from their everyday phone. Lab prototype on a Pixel Tablet, not released. Since 12 Oct 2026: 1,022 commits, 92 PRs, a 3,301-test gate that runs in 248 s (was about 61 min serial), and a 6-harness × 10-task device matrix whose verifiers check files on disk, never the agent's words. Built by orchestrating AI coding agents; I own the decisions and review the work.
-- **[omp-model-roles](https://github.com/vokativ/omp-model-roles)**: quota-aware model-role config for the Oh My Pi coding-agent harness. 15 roles with fallback chains across 5 subscriptions plus API providers, with the benchmarks behind each choice (results are directional, small n).
+- **Phone-based home agent** (private prototype, not released). Turns a spare or used Android phone or tablet into an always-on home for AI coding assistants (Codex, Claude Code and four others), running on subscriptions people already pay for and controlled from their everyday phone. Hard parts: safe sign-ins and credentials on an always-on device, running six assistants reliably, and automated tests that check the actual output, not the assistant's own report. Built with AI coding assistants; I own the product decisions, architecture, review and testing.
+- **[omp-model-roles](https://github.com/vokativ/omp-model-roles)**: AI model selection for coding work. Routes each kind of coding task to a suitable model across several subscriptions, switching models when one hits its usage limit. Evaluated with small tests on real code reviews; results preliminary.
 
-## Shipped
+## Available and open source
 
-- **Adiufant**: family organizer that turns school flyers, voice notes and screenshots into calendar events and dated prep tasks. Flutter, Firebase, Gemini; save-first review and an AI-consent flow. [Google Play](https://play.google.com/store/apps/details?id=com.adiufant.app) · [App Store](https://apps.apple.com/us/app/adiufant-family-organizer/id6757211021) · [adiufant.com](https://adiufant.com)
-- **Prepiši**: offline Serbian/Croatian Latin↔Cyrillic and dialect converter, no telemetry. [Chrome](https://chromewebstore.google.com/detail/prepi%C5%A1i/lgcbhfgbbjdhglmomlgkbeikcngjhikb) · [Firefox](https://addons.mozilla.org/firefox/addon/prepisi-converter/) · [Edge](https://microsoftedge.microsoft.com/addons/detail/prepi%C5%A1i/idgdmkmmdemdhdkenlodijkljpbckool) · [code](https://github.com/vokativ/prepisi)
-- **[RedMart Grocery Cart Helper](https://github.com/vokativ/grocery-shopping-redmart)**: photo, voice or typed list in; an AI agent fills the RedMart cart and stops before checkout. In daily household use since Jul 2026. Looking for a few Singapore tester households.
-- **[Korak do glasa](https://github.com/vokativ/glasanje)** (archived): on-device PWA that generated the Serbian overseas voter-registration request. Ran through the 2026 deadline.
-- **[tern-file-paste](https://github.com/vokativ/tern-file-paste)**: Tern terminal plugin that uploads copied files over SSH and inserts the remote paths into the focused pane.
+- **Adiufant**: family organizer, available free on Google Play and the App Store. Turns school flyers, voice notes and screenshots into calendar events and dated prep tasks. Flutter, Firebase, Gemini; parents review AI suggestions before anything is added to the calendar. [Google Play](https://play.google.com/store/apps/details?id=com.adiufant.app) · [App Store](https://apps.apple.com/us/app/adiufant-family-organizer/id6757211021) · [adiufant.com](https://adiufant.com)
+- **Prepiši**: published on the Chrome, Firefox and Edge add-on stores; offline Serbian/Croatian Latin↔Cyrillic and dialect converter, no telemetry. [Chrome](https://chromewebstore.google.com/detail/prepi%C5%A1i/lgcbhfgbbjdhglmomlgkbeikcngjhikb) · [Firefox](https://addons.mozilla.org/firefox/addon/prepisi-converter/) · [Edge](https://microsoftedge.microsoft.com/addons/detail/prepi%C5%A1i/idgdmkmmdemdhdkenlodijkljpbckool) · [code](https://github.com/vokativ/prepisi)
+- **[RedMart Grocery Cart Helper](https://github.com/vokativ/grocery-shopping-redmart)**: photo, voice or typed list in; an AI agent fills the RedMart cart, checks it, and stops before checkout so a person pays; it hands control back when the shop asks for a verification check. In daily use at home since Jul 2026; open source (MIT); looking for Singapore testers.
+- **[Korak do glasa](https://github.com/vokativ/glasanje)** (archived): PWA that prepares the official Serbian overseas voter-registration request PDF in the browser on the user's own device; the user decides how to send it. Rebuild of my 2020 project covered by BBC News Serbian; ran through the 2026 deadline.
+- **[tern-file-paste](https://github.com/vokativ/tern-file-paste)**: Tern terminal plugin that uploads copied files over SSH and inserts the remote paths into the focused pane, for AI coding assistants.
 
 ## How I work
 
-- I orchestrate AI coding agents and keep human review gates: agents propose changes through pull requests, I review them, and I decide what ships.
-- Evals before claims. I measure, label small samples as directional, and say plainly what is a prototype and what is live.
+I build with AI coding assistants and stay accountable for the design, review and testing: results are checked by automated tests that inspect real outputs. I label small tests as preliminary and say plainly what is a prototype and what is available.
 
 ## Links
 
